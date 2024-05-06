@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <style>
+        
+        @media (max-width: 600px) {
+        
+        body{
+            
+            background: radial-gradient(circle, #2b82ff,#80acff);
+        }
+        
+    .forleft, .forright {
+        width: auto;  
+        margin: 15px;
+        float: none;
+    }
+
+    .forleft img, .forright img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+    
+        
+}
+        
+        .fading4{
+            
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        
+        .fading5{
+            
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .fading3{
+            
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        
+        .fading2{
+            
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        
+        .fading{
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        
+        .fade-out{
+            
+            opacity: 0;
+        }
+        body{
+            
+            background: linear-gradient(to bottom,#bfbfffdf, #ba80ff);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        
+        #intro{
+            
+            text-align: center;
+            background: linear-gradient(to bottom,#a555ff,#8515ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: 'Brush Script MT',cursive;
+            font-weight: bold;
+            
+            
+        }
+        
+        h2{
+            
+            font-family:'Courier New', monospace;
+            color: #663cb4;
+                       
+        }
+        .forleft{
+            
+            width: 450px;
+            margin: 15px;
+            float: left;         
+        }
+        
+        p{
+            
+            font-size: 10px;
+            font-family: monospace ;
+            font-weight: bold;
+            color: #2959a2
+            
+        }
+        
+        .forright{
+            
+            width: 450px;
+            margin: 15px;
+            float: right;    
+            
+        }
+        
+        img{
+            
+            border: 3px solid #76ecec;
+            border-radius: 10px;
+            
+        }
+        
+        img:hover{
+            
+            border: 3px solid #de252e;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        #goleft{
+                      
+            font-family:'Courier New', monospace;
+            color: #663cb4;
+            text-align: right;
+            
+        }
+        
+        html{
+            
+            scroll-behavior: smooth;
+            
+            
+        }
+    
+    </style>
+    <title>Final project</title>
+</head>
+<body >
+        <div class="fading">
+            
+             <h1 id="intro">Top Tourist Destinations in the World</h1>
+    <br>
+    
+    <h2>Eiffel Tower</h2>
+    
+    <img src="Eiffel.jpeg" alt="Eiffel Tower" class="forleft">
+    
+    <p>Located in the heart of Paris, the most romantic city in the world, the Eiffel Tower has become a universal symbol of travel and a popular tourist destination. A visit to the Eiffel Tower tops many travel lists, and it’s no surprise considering the 7 million visitors who are snapping selfies under the 81-story building</p>
+    
+   </div>
+   
+    <br><br>
+    
+    <div class="fading2">
+        
+        <h2 id="goleft"> Statue of Liberty</h2>
+    
+    <img src="statueofliberty.jpeg" alt="image of statue of liberty" class="forright" >
+    
+   <p>Those visiting New York City will want to make sure to take the time to see the Statue of Liberty.This famous Landmark for the United States was designed by French sculptor Frédéric Bartholdi and was a gift from France to the United States </p>
+   
+    
+        
+    </div>
+    
+    <br><br>
+    
+    <div class="fading3">
+            
+            <h2>Colosseum </h2>
+    
+    <img src="colosseum.jpeg" alt="the colosseum" class="forleft" >
+    
+    <p>The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age. </p>
+            
+    </div>
+            
+    <br><br>
+    
+    <div class="fading4">
+        
+        <h2 id="goleft"> Niagara Falls</h2>
+    
+    <img src="Niagara.jpeg" alt="Niagara Falls" class="forright">
+    
+    <p> Niagara Falls is a natural site made up of three huge waterfalls, the largest and most powerful in the whole of North America. It’s estimated that Niagara Falls attracts 22.5 million visitors a year, by far the highest number on this list, which is no doubt the reason why it is the most lucrative attraction.</p>
+    
+    
+        
+    </div>
+        
+        
+    <br><br>
+    
+    <div class="fading5">
+        
+        <h2> Great Pyramid of Giza</h2>
+    
+    <img src="giza.jpeg" alt="the giza" class="forleft">
+    
+    <p> The Pyramids of Giza, standing tall on Egypt's desert plains, are enduring symbols of ancient marvel and mystery. Built as grand tombs for pharaohs, these monumental structures have for millennia captivated imaginations with their scale and precision.</p>
+        
+    </div>
+        
+         
+    
+        
+        <script>
+    window.addEventListener('scroll', function(){
+        let elements = document.querySelector(".fading");
+        let windpost = window.scrollY;
+
+        if(windpost > 300){           
+            elements.classList.add('fade-out');
+        }
+        else{   
+           elements.classList.remove('fade-out');
+        }
+    });
+    
+    window.addEventListener('scroll', function (){
+        let elements2 = document.querySelector('.fading2');
+        
+        let window2 = window.scrollY;
+        
+        if(window2 > 750){
+            
+            elements2.classList.add('fade-out');
+        }
+        else{
+            
+            elements2.classList.remove('fade-out');
+        }
+    });
+    
+    window.addEventListener('scroll', function (){
+        let elements3 = document.querySelector('.fading3');
+        
+        let window2 = window.scrollY;
+        
+        if(window2 > 1205){
+            
+            elements3.classList.add('fade-out');
+        }
+        else{
+            
+            elements3.classList.remove('fade-out');
+        }
+    });
+    
+    window.addEventListener('scroll', function () {
+    let elements5 = document.querySelectorAll('.fading5');
+    let window5 = window.scrollY;
+
+    elements5.forEach(function (element) {
+        if (window5 < 899) {
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        } else {
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        }
+    });
+});
+    
+    window.addEventListener('scroll', function () {
+    let elements4 = document.querySelectorAll('.fading4');
+    let window4 = window.scrollY;
+
+    elements4.forEach(function (element) {
+        if (window4 < 699) {
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        } else {
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        }
+    });
+});
+
+    </script>
+</body>
+  </html>
+      
